@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+    <!--(android:orientation="vertical")
+    Artinya semua komponen disusun dari atas ke bawah-->
+
+    <!--Judul-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Konversi Volume Air"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+    <!--Label Volume-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume Air"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <!--input volume-->
+    <EditText
+        android:id="@+id/edtVolume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Volume Air"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp"/>
+    <!--EditText adalah kotak yang nantinya digunakan pengguna untuk memasukkan angka.-->
+
+
+    <!--Satuan Volume-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="mL"
+        android:textSize="16sp"
+        android:gravity="end"/>
+    <!--Button-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnKonversi"
+        android:text="Konversi"
+        android:layout_marginTop="24dp"
+        />
+    <!--Label Hasil-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Massa Air"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"/>
+    <!--Hasil-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtHasil"
+        android:text="Hasil Konversi"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:background="#EEEEEE"
+        android:layout_marginTop="8dp"/>
+    <!--Satuan Massa-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="gram"
+        android:textSize="16sp"
+        android:gravity="end"/>
+
+</LinearLayout>
